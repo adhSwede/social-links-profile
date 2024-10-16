@@ -1,0 +1,145 @@
+/* root & body */
+:root {
+  font-family: "Inter";
+  color: #ffffff;
+  line-height: 150%;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #141414;
+}
+
+/* Typography */
+#title {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 0;
+  text-align: center;
+}
+#description {
+  color: #c4f82a;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+#bio {
+  justify-self: flex-end;
+  font-size: 14px;
+  /* position: relative;
+  top: 0.5rem; */
+  font-weight: 300;
+  margin: 0;
+}
+
+/* Card */
+#profileCard {
+  margin: 0;
+  height: 63.64vh;
+  width: 26.67vw;
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0.5rem;
+}
+#profilePic {
+  margin: 1rem;
+  height: 5.5rem;
+  width: 5.5rem;
+  border-radius: 50%;
+}
+
+/* Link buttons style */
+#linkButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  width: 79%;
+  height: 46%;
+  position: relative;
+  bottom: 0.5rem;
+}
+#linkButtons li {
+  width: 100%;
+  height: 15.6%;
+  background-color: #333333;
+  border-radius: 8px;
+}
+#linkButtons li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #ffffff;
+  box-sizing: border-box;
+  text-align: center;
+  height: 100%;
+  border-radius: 8px;
+  font-weight: 500;
+}
+#linkButtons li:hover {
+  background-color: #c4f82a;
+}
+#linkButtons li a:hover {
+  color: #333333;
+  font-weight: 600;
+}
+
+/* Attribution Tag */
+.attribution {
+  position: absolute;
+  bottom: 2rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* adjustments for tablet */
+@media only screen and (max-width: 800px) {
+  #profileCard {
+    width: 59vw;
+    height: 59vh;
+  }
+  #profilePic {
+    margin-top: 4%;
+  }
+  #bio {
+    top: 0.5rem;
+  }
+}
+
+/* adjustments for small mobiles */
+@media only screen and (max-width: 400px) {
+  #profileCard {
+    width: 87vw;
+    height: 71vh;
+  }
+  #profilePic {
+    margin-top: 3.5%;
+  }
+  #linkButtons {
+    width: 85%;
+    height: 50%;
+  }
+  #bio {
+    top: 0.2rem;
+  }
+}
